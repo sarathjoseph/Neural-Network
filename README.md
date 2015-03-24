@@ -37,6 +37,8 @@ The network was trained on the entire data and after repeated experiments , the 
 <br/>
 
 <b>￼Testing</b>
+
+<br/>
 The network was first tested with the main.py file where the best weights were obtained after repeated testing and printing out the weights.
 
 <br/>
