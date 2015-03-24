@@ -6,7 +6,8 @@ Wikipedia Language Detection Feed­forward neural network with std backpropagati
 
 <br/>
 
-Classes
+<b>Classes</br>
+<br/>
 ● Neural_Network
 ● Network_Trainer
 ● Language_Features
@@ -15,11 +16,11 @@ Classes
 
 Language_Features class is instantiated with the feature set and contains the vectorize method which turns the features into real numbers. The feature set is passed in as callbacks for allowing addition of features dynamically to the Language Features class.
 
-
+<br/>
 Network_Trainer class is instantiated with the language features object , the codes and the input folder for training. The codes are kept in a dictionary containing the mapping between folder names (language names) and output codes
 eg { “en”: “001” , “nl”:010”, “it”:”100}
 
-
+<br/>
 The trainer object makes a list of vectorized data inputs with the help of the Language_Features class for use in training . It also adds the inputs to the train list one language at a time in order and maintaining the order . This is important for proper training of the network . eg [ English, Dutch, Italian, English ,Dutch, Italian ......]
 Neural_Network is instantiated specifying the number of inputs and outputs. It contains methods for feed­forward and back propagation operations.
 
@@ -32,10 +33,10 @@ The network was trained on the entire data and after repeated experiments , the 
 
 
 
-￼Testing
+<b>￼Testing<b>
 The network was first tested with the main.py file where the best weights were obtained after repeated testing and printing out the weights.
 
-
+<br/>
 
 The test.py was then updated with the best weights and used for final testing.
 The neural network also has a method called output_index_codes which contains the mapping for the index of the languages in the output vector.
