@@ -13,8 +13,8 @@ Wikipedia Language Detection Feed­forward neural network with std backpropagati
 <li>Network_Trainer</li>
 <li>Language_Features</li>
 
-
-
+</ul>
+<br/>
 Language_Features class is instantiated with the feature set and contains the vectorize method which turns the features into real numbers. The feature set is passed in as callbacks for allowing addition of features dynamically to the Language Features class.
 
 <br/>
@@ -34,9 +34,9 @@ An update_weights method is used while testing to initialize the network with th
 
 The network was trained on the entire data and after repeated experiments , the network was found to learn its best with a data set of 1200 articles and a learning rate of 1.0 for 10000 epochs. The data was trained with 100, 1000 and 10000 epochs with varying input sizes (400, 600 and 1200).
 
+<br/>
 
-
-<b>￼Testing/<b>
+<b>￼Testing</b>
 The network was first tested with the main.py file where the best weights were obtained after repeated testing and printing out the weights.
 
 <br/>
