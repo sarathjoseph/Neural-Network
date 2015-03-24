@@ -6,11 +6,12 @@ Wikipedia Language Detection Feed­forward neural network with std backpropagati
 
 <br/>
 
-<b>Classes</br>
+<b>Classes</b>
 <br/>
-● Neural_Network
-● Network_Trainer
-● Language_Features
+<ul>
+<li>Neural_Network</li>
+<li>Network_Trainer</li>
+<li>Language_Features</li>
 
 
 
@@ -26,14 +27,16 @@ Neural_Network is instantiated specifying the number of inputs and outputs. It c
 
 
 An update_weights method is used while testing to initialize the network with the best weights. Test takes in the feature list and the input text and outputs the predicted language
-Training
+
+
+<b>Training</b>
 
 
 The network was trained on the entire data and after repeated experiments , the network was found to learn its best with a data set of 1200 articles and a learning rate of 1.0 for 10000 epochs. The data was trained with 100, 1000 and 10000 epochs with varying input sizes (400, 600 and 1200).
 
 
 
-<b>￼Testing<b>
+<b>￼Testing/<b>
 The network was first tested with the main.py file where the best weights were obtained after repeated testing and printing out the weights.
 
 <br/>
