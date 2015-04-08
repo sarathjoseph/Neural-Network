@@ -27,10 +27,7 @@ if __name__ == "__main__":
    
    # Testing 
 
-    vector = []
-
-    for feature in lf.feature_list:
-      vector.append(lf.vectorize(feature, text))
+    vector = [lf.vectorize(feature, text) for feature in lf.feature_list ]
 
     output=nn.test(vector)
      
