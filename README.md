@@ -2,7 +2,7 @@
 
 A raw Neural implementation in Python that has a simple interface
 
-<b>Usage</b><br/>
+<h2>Usage</b><h2/>
 
 <h3>Instantiation</h3> <br/>
 
@@ -35,19 +35,19 @@ nn.test([0 , 1 , 0])
 <br/>
 
 
-<h3>Get weights</h3> - helps weights from the network
+<h3>Get weights</h3>  Helps weights from the network<br/>
 <br/>
 
   eg nn.get_weights()
   
   <br/>
   
- <h3> Set weights</h3>- helps set weights 
+ <h3> Set weights</h3>Helps set weights <br/>
   <br/>
   Usage of weights should follow the same format (dictionary) that you obtain from doing a get_weights() on the network
   nn.update_weights(weights)
   <br/><br/>
-<b>LANGUAGE IDENTIFICATION PROJECT<b><br/>
+<h1>LANGUAGE IDENTIFICATION PROJECT</h1><br/>
 
 A Neural Network for Language Identification (Eng, Dutch , Italian ) using Python
 Wikipedia Language Detection Feed­forward neural network with std backpropagation implementation
