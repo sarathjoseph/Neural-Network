@@ -34,14 +34,11 @@ nn.test([0 , 1 , 0])
 
 <br/>
 
-
 <h3>Get weights</h3>  Helps weights from the network<br/>
 <br/>
 
   eg nn.get_weights()
-  
   <br/>
-  
  <h3> Set weights</h3>Helps set weights <br/>
   <br/>
   Usage of weights should follow the same format (dictionary) that you obtain from doing a get_weights() on the network
