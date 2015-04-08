@@ -34,8 +34,8 @@ if __name__ == "__main__":
     lang_index=output.index(max(output))
 
     # Print the identified language
-    result=index_codes[lang_index]
-    print(result)
+    
+    print(index_codes[lang_index])
           
 
     
