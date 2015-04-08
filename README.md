@@ -4,14 +4,14 @@ A raw Neural implementation in Python that has a simple interface
 
 <b>Usage</b><br/>
 
-Instantiation <br/>
+<h3>Instantiation</h3> <br/>
 
 Neural_Network(num_inputs, num_outputs)  # create a neural network object passing in number of input and output nodes
 <br/>
 eg nn= Neural_Network(4,3) 
 <br/>
 
-Training <br/>
+<h3>Training </h3><br/>
 
 nn.train(train_data, num_of_epochs,learning_rate) 
 
@@ -22,7 +22,7 @@ Train data is passed in as a 2d array of inputs vectors with the last entry bein
 It returns the training error which can be useful for knowing how the network is learning
 <br/>
 
-Testing<br/>
+<h3>Testing</h3><br/>
 
 nn.test(test_data) 
 
@@ -35,14 +35,14 @@ nn.test([0 , 1 , 0])
 <br/>
 
 
-Get weights - helps weights from the network
+<h3>Get weights</h3> - helps weights from the network
 <br/>
 
   eg nn.get_weights()
   
   <br/>
   
-  Set weights- helps set weights 
+ <h3> Set weights</h3>- helps set weights 
   <br/>
   Usage of weights should follow the same format (dictionary) that you obtain from doing a get_weights() on the network
   nn.update_weights(weights)
