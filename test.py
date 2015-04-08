@@ -35,8 +35,11 @@ if __name__ == "__main__":
     output=nn.test(vector)
      
     lang_index=output.index(max(output))
-    index_codes[lang_index]
+
+    # Print the identified language
+    result=index_codes[lang_index]
+    print(result)
           
-    print(nn.test(lf,text))
+
     
  
