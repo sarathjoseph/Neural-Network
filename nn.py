@@ -16,9 +16,7 @@ class Neural_Network(object):
         
         self.ih_w = [[random.random() for _ in range(self.n_hln)] for _ in range(num_inputs)]  # input hidden weights
         self.ho_w = [[random.random() for _ in range(num_outputs)]for _ in range(self.n_hln) ]  # hidden_output_weights
-    
-    def output_index_codes(self,codes):
-        self.index_codes=codes
+
         
     def update_weights(self, weights):
         
@@ -86,31 +84,23 @@ class Neural_Network(object):
         
         return sum([abs(e) for e in out_error])
         
-    def train(self, train_obj, epochs, learning_rate):
+    def train(self, train_data, epochs, learning_rate):
 
         self.lnr = learning_rate
-
-        train_set = train_obj.get_data()
         
         for _ in range(epochs):
             e=0.0
-            for example in train_set:
+            for example in train_data:
                 
                 output = self.feed_forward(example[:-1])
                 error=self.back_propogate(output, example)
                 e+=error
-            
-            #error_epoch=e/len(train_set)   
+            # return the error rate which can be useful for stopping condition
+            return error_epoch=e/len(train_data)   
     
-    def test(self, f_obj, text):
-        vector = []
-        for feature in f_obj.feature_list:
-                    vector.append(f_obj.vectorize(feature, text))
+    def test(self, vector):
+        return self.feed_forward(vector) 
         
-        output=self.feed_forward(vector) 
-        print(output)
-        lang_index=output.index(max(output))
-        return self.index_codes[lang_index]
                 
     
     def sigmoid(self, x):

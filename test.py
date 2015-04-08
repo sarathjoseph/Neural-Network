@@ -22,10 +22,21 @@ if __name__ == "__main__":
     nn = Neural_Network(4, 3)
     
     nn.update_weights(weights)
-    nn.output_index_codes({0:"Italian", 1:"Dutch", 2:"English"})
+
+    index_codes={0:"Italian", 1:"Dutch", 2:"English"}
+   
+   # Testing 
+
+    vector = []
     
-    text="It was indeed a good assignment"
-    results = nn.test(lf, text)
-    print(results)
+    for feature in f_obj.feature_list:
+      vector.append(f_obj.vectorize(feature, text))
+
+    output=nn.test(vector)
+     
+    lang_index=output.index(max(output))
+    index_codes[lang_index]
+          
+    print(nn.test(lf,text))
     
  
