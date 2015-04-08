@@ -46,6 +46,7 @@ Get weights - helps weights from the network
   <br/>
   Usage of weights should follow the same format (dictionary) that you obtain from doing a get_weights() on the network
   nn.update_weights(weights)
+  <br/><br/>
 <b>LANGUAGE IDENTIFICATION PROJECT<b><br/>
 
 A Neural Network for Language Identification (Eng, Dutch , Italian ) using Python
