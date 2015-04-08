@@ -28,9 +28,9 @@ if __name__ == "__main__":
    # Testing 
 
     vector = []
-    
-    for feature in f_obj.feature_list:
-      vector.append(f_obj.vectorize(feature, text))
+
+    for feature in lf.feature_list:
+      vector.append(lf.vectorize(feature, text))
 
     output=nn.test(vector)
      
