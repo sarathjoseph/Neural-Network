@@ -44,4 +44,4 @@ The network was first tested with the main.py file where the best weights were o
 <br/>
 
 The test.py was then updated with the best weights and used for final testing.
-The neural network also has a method called output_index_codes which contains the mapping for the index of the languages in the output vector.
+output_index_codes dictionary contains the mapping for the index of the languages in the output vector.
