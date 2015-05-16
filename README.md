@@ -2,9 +2,7 @@
 
 A raw Neural implementation in Python that has a simple interface
 
-<h2><b>Usage</b><h2/>
-
-<h3>Instantiation</h3> <br/>
+<h3>Instantiation</h3>
 
 Neural_Network(num_inputs, num_outputs)  # create a neural network object passing in number of input and output nodes
 
@@ -12,8 +10,7 @@ Neural_Network(num_inputs, num_outputs)  # create a neural network object passin
  nn= Neural_Network(4,3) 
 
 ```
-
-<h3>Training </h3><br/>
+<h3>Training </h3>
 
 ```Python
 
@@ -27,7 +24,7 @@ Train data is passed in as a 2d array of inputs vectors with the last entry bein
 It returns the training error which can be useful for knowing how the network is learning
 <br/>
 
-<h3>Testing</h3><br/>
+<h3>Testing</h3>
 ```Python
 nn.test(test_data) 
 ```
@@ -38,7 +35,7 @@ Pass in test_data in the form of a 2d array with test input data .
 nn.test([0 , 1 , 0])
 ```
 
-<h3>Get weights</h3>  Helps weights from the network<br/>
+<h3>Get weights</h3>  Helps weights from the network
 
   ```Python
    nn.get_weights()
