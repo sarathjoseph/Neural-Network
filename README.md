@@ -8,9 +8,10 @@ A raw Neural implementation in Python that has a simple interface
 
 Neural_Network(num_inputs, num_outputs)  # create a neural network object passing in number of input and output nodes
 <br/>
+```Python
 eg nn= Neural_Network(4,3) 
 <br/>
-
+```
 <h3>Training </h3><br/>
 
 nn.train(train_data, num_of_epochs,learning_rate) 
