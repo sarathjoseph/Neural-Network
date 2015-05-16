@@ -2,17 +2,17 @@
 
 A raw Neural implementation in Python that has a simple interface
 
-<h2>Usage</b><h2/>
+<h2><b>Usage</b><h2/>
 
 <h3>Instantiation</h3> <br/>
 
 Neural_Network(num_inputs, num_outputs)  # create a neural network object passing in number of input and output nodes
-<br/>
+
 ```Python
  nn= Neural_Network(4,3) 
 
 ```
-<br/>
+
 <h3>Training </h3><br/>
 
 ```Python
@@ -20,7 +20,7 @@ Neural_Network(num_inputs, num_outputs)  # create a neural network object passin
 nn.train(train_data, num_of_epochs,learning_rate) 
 
 ```
-<br/>
+
 Train data is passed in as a 2d array of inputs vectors with the last entry being expected output. 
 <br/>eg.  train_data= [[1, 0, 0],[0, 0, 1],[1, 1, 1]] where [1, 1, 1] is the expected output.
 
@@ -31,20 +31,19 @@ It returns the training error which can be useful for knowing how the network is
 ```Python
 nn.test(test_data) 
 ```
-<br/>
+
 Pass in test_data in the form of a 2d array with test input data . 
-<br/>
+
 ```Python
 nn.test([0 , 1 , 0])
 ```
-<br/>
 
 <h3>Get weights</h3>  Helps weights from the network<br/>
-<br/>
+
   ```Python
    nn.get_weights()
    ```
-  <br/>
+
  <h3> Set weights</h3>Helps set weights <br/>
   <br/>
   Usage of weights should follow the same format (dictionary) that you obtain from doing a get_weights() on the network
