@@ -95,7 +95,6 @@ class Neural_Network(object):
                 output = self.feed_forward(example[:-1])
                 error=self.back_propogate(output, example)
                 e+=error
-            # (Disabled) return the error rate which can be useful for stopping condition
             # return error_epoch=e/len(train_data)   
     
     def test(self, vector):
